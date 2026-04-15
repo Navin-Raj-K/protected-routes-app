@@ -1,9 +1,16 @@
-name: test
+name: CI-CD
 
-on: push
+on:
+push:
+branches:
+- main
 
 jobs:
-test-job:
+build:
 runs-on: ubuntu-latest
+
+```
 steps:
-- run: echo "Hello World"
+  - name: Say Hello
+    run: echo Hello
+```
